@@ -1,9 +1,7 @@
-var t = {}
-var featurecollection = require('./featurecollection')
-t.featurecollection = featurecollection
+var featurecollection = require('turf-featurecollection')
 
 module.exports = function(fc, inField, outField, translations, done){
-  var reclassed = t.featurecollection([])
+  var reclassed = featurecollection([])
 
   done = done || function () {};
 
