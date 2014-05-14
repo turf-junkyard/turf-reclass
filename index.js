@@ -1,4 +1,5 @@
 var featurecollection = require('turf-featurecollection')
+var reclass = require('./index.js')
 
 module.exports = function(fc, inField, outField, translations, done){
   var reclassed = featurecollection([])
@@ -11,7 +12,7 @@ module.exports = function(fc, inField, outField, translations, done){
         feature.properties[outField] = translations[i][2]
       }
     }
-    reclassed.features.push(reclassedFeature)
+    reclassed.features.push(feature)
   })
 
   return reclassed;

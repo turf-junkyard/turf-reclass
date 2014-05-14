@@ -1,5 +1,5 @@
 var test = require('tape')
-var jenks = require('./')
+var reclass = require('./')
 var fs = require('fs')
 
 test('reclass', function(t){
