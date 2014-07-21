@@ -4,6 +4,29 @@ turf-reclass
 
 Takes a feature collection, a in field, an out field, and an array of translations and outputs an identical feature collection with the out field property populated.
 
+###Install
+
+```sh
+npm install turf-reclass
+```
+
+###Parameters
+
+|name|description|
+|---|---|
+|fc|featurcollection to transform|
+|inField|field to map|
+|outField|new field|
+|translations|an array of tanslations like:  [[0, 20, 1], [20, 40, 2], ... [60, Infinity, 4]]|
+
+###Usage
+
+```js
+reclass(pts, inField, outField, translations)
+```
+
+###Example
+
 ```js
 var reclass = require('turf-reclass')
 var fs = require('fs')
