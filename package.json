@@ -24,9 +24,9 @@
   "homepage": "https://github.com/morganherlocker/turf-reclass",
   "devDependencies": {
     "benchmark": "^1.0.0",
-    "tape": "^2.13.4"
+    "tape": "^3.0.3"
   },
   "dependencies": {
-    "turf-featurecollection": "^0.1.0"
+    "turf-featurecollection": "^1.0.0"
   }
 }
