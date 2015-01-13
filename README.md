@@ -17,7 +17,7 @@ npm install turf-reclass
 |fc|featurcollection to transform|
 |inField|field to map|
 |outField|new field|
-|translations|an array of tanslations like:  [[0, 20, 1], [20, 40, 2], ... [60, Infinity, 4]]|
+|translations|an array of translations like:  [[0, 20, 1], [20, 40, 2], ... [60, Infinity, 4]]|
 
 ###Usage
 
