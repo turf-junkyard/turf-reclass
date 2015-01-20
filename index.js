@@ -2,9 +2,9 @@ var featurecollection = require('turf-featurecollection');
 var reclass = require('./index.js');
 
 /**
- * Takes a featurecollection, a in field, an out field, and
- * an array of translations and outputs an identical feature collection with
- * the out field property populated.
+ * Takes a {@link FeatureCollection}, an input field, an output field, and
+ * an array of translations and outputs an identical FeatureCollection with
+ * the output field property populated.
 * @module turf/reclass
 * @param {FeatureCollection} input
 * @param {string} inField field to map
