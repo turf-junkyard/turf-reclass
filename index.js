@@ -13,11 +13,11 @@ var reclass = require('./index.js');
 * @return {FeatureCollection} a FeatureCollection with identical geometries to `input` but with `outField` populated.
 * @example
 * var points = turf.featurecollection([
-*   turf.point(13.170547, 32.888669, {population: 200}),
-*   turf.point(13.182048, 32.889533, {population: 600}),
-*   turf.point(13.17398, 32.882182, {population: 100}),
-*   turf.point(13.174324, 32.895011, {population: 200}),
-*   turf.point(13.185825, 32.884344, {population: 300})
+*   turf.point([13.170547, 32.888669], {population: 200}),
+*   turf.point([13.182048, 32.889533], {population: 600}),
+*   turf.point([13.17398, 32.882182], {population: 100}),
+*   turf.point([13.174324, 32.895011], {population: 200}),
+*   turf.point([13.185825, 32.884344], {population: 300})
 * ]);
 * // 0 to 200 will map to "small", 200 to 400 will map to "medium", 400 to 600 will map to "large"
 * var translations = [
