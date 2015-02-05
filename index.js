@@ -6,6 +6,7 @@ var reclass = require('./index.js');
  * an array of translations and outputs an identical FeatureCollection with
  * the output field property populated.
 * @module turf/reclass
+* @category classification
 * @param {FeatureCollection} input a FeatureCollection of any type
 * @param {string} inField the field to translate
 * @param {string} outField the field in which to store translated results
