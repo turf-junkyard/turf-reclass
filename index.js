@@ -7,11 +7,11 @@ var reclass = require('./index.js');
  * the output field property populated.
 * @module turf/reclass
 * @category classification
-* @param {FeatureCollection} input a FeatureCollection of any type
-* @param {string} inField the field to translate
-* @param {string} outField the field in which to store translated results
+* @param {FeatureCollection<(Point|LineString|Polygon)>} input a FeatureCollection of any type
+* @param {String} inField the field to translate
+* @param {String} outField the field in which to store translated results
 * @param {Array<number>} translations an array of translations
-* @return {FeatureCollection} a FeatureCollection with identical geometries to `input` but with `outField` populated.
+* @return {FeatureCollection<(Point|LineString|Polygon)>} a FeatureCollection with identical geometries to `input` but with `outField` populated.
 * @example
 * var points = {
 *   "type": "FeatureCollection",
