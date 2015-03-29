@@ -1,5 +1,4 @@
 var featurecollection = require('turf-featurecollection');
-var reclass = require('./index.js');
 
 /**
  * Takes a {@link FeatureCollection}, an input field, an output field, and
@@ -77,13 +76,11 @@ var reclass = require('./index.js');
 * //=reclassed
 *
 */
-module.exports = function(fc, inField, outField, translations, done){
+module.exports = function(fc, inField, outField, translations) {
   var reclassed = featurecollection([]);
 
-  fc.features.forEach(function(feature){
-    var reclassedFeature;
-    var found = false;
-    for(var i = 0; i < translations.length; i++){
+  fc.features.forEach(function(feature) {
+    for(var i = 0; i < translations.length; i++) {
       if(feature.properties[inField] >= translations[i][0] && feature.properties[inField] <= translations[i][1]) {
         feature.properties[outField] = translations[i][2];
       }
